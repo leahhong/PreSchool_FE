@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import hero1 from "../assets/images/homepage1.png";
 import hero2 from "../assets/images/homepage2.png";
 import hero3 from "../assets/images/homepage3.png";
@@ -102,9 +103,12 @@ const HomePage = () => {
           </p>
         </div>
         <div className="flex justify-end">
-          <button className="w-full rounded-full bg-[#FFD739] px-16 py-3 text-md font-semibold text-slate-900 transition hover:bg-[#f7c816] md:w-auto">
+          <Link
+            to="/application"
+            className="w-full rounded-full bg-[#FFD739] px-16 py-3 text-md font-semibold text-slate-900 transition hover:bg-[#f7c816] md:w-auto text-center"
+          >
             Đăng ký ngay
-          </button>
+          </Link>
         </div>
       </section>
     </div>
